@@ -29,11 +29,10 @@ def transform(source, mapping):
             array_key = next(iter(mapping[key]))
             array = mapping[key][array_key]
             data[array_key] = transform(source[next(iter(array))], array)
+        elif type(mapping[key]) is dict:
+            data = transform(source, mapping[key])
         else:
-            if type(mapping[key]) is dict:
-                data = transform(source, mapping[key])
-            else:
-                data[key] = source[mapping[key]]
+            data[key] = source[mapping[key]]
 
     return data
 
