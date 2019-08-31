@@ -13,7 +13,7 @@ def main():
                 'posisyon': 'Developer',
                 'industriya': 'IT',
                 'kakayahan': {
-                    'lengwahe': 'Python'
+                    'Country_Code': 'Python'
                 }
             }
         }

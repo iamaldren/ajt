@@ -37,6 +37,8 @@ fields:
 
 2. This is only good for 1 to 1 mapping of fields, and can't handle complicated mapping like flattening of nested objects or combining 2 fields to a single field.
 
+** If you need to handle complicated mapping, then best to use existing libraries out there. **
+
 ## TODO
 
 1. Handle multiple files
