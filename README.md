@@ -10,9 +10,9 @@ Here comes the solution.
 
 While trying to search the web or what tools can be used to transform a JSON data to a different schema, there were actually a lot that shown but seems a bit complicated.
 
-Then I stumbled upon this JSONBender library, where I can just define the schema I want to transform to as a dictionary, and pass the JSONBender functions for iterating to my source JSON.
+Then I stumbled upon this [JSONBender](https://github.com/Onyo/jsonbender) library, where I can just define the schema I want to transform to as a dictionary, and pass the JSONBender functions for iterating to my source JSON.
 
-I find it really easy to work with, plus transformation is easy with much of hassle.
+I find it really easy to work with, plus transformation is easy with not much of hassle.
 
 ## AJT Project
 
