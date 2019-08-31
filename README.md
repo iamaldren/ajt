@@ -16,11 +16,9 @@ I find it really easy to work with, plus transformation is easy with much of has
 
 ## AJT Project
 
-This project is using JSONBender to transform my schema to a different one.
+I am not using the actual JSONBender library, but it helped gave me the idea on how to transform a JSON object to a different schema.
 
-Currently, it only supports a Simple JSON format, no arrays or whatever complicated shizz.
-
-To make it more dynamic, I am defining a YML file the contains all the fields you want to transform.
+A schema YAML file is being used to define the mapping transformation.
 
 **Format**
 
@@ -28,8 +26,11 @@ fields:
  newfield1: oldfield1
  newfield2: oldfield2
  newfield3: oldfield3
+ array: <-- (Used if the next field contains a JSON object)
+  newfield4:
+   oldfield4:
+    newfield5: oldfield5 <-- (techinically this part is an object under field #4)
  
 ## TODO
 
-1. Handle nested JSON format
-2. Handle multiple files
+1. Handle multiple files
