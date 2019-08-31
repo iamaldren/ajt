@@ -26,11 +26,17 @@ fields:
  newfield1: oldfield1
  newfield2: oldfield2
  newfield3: oldfield3
- array: <-- (Used if the next field contains a JSON object)
+ nested: <-- (Used if the next field contains a JSON object)
   newfield4:
    oldfield4:
     newfield5: oldfield5 <-- (techinically this part is an object under field #4)
  
+## Limitations
+
+1. The words 'fields' and 'nested' in here are reserved keywords, and can't be part of your original JSON object.
+
+2. This is only good for 1 to 1 mapping of fields, and can't handle complicated mapping like flattening of nested objects or combining 2 fields to a single field.
+
 ## TODO
 
 1. Handle multiple files

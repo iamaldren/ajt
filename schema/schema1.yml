@@ -1,12 +1,12 @@
 fields:
   name: pangalan
   surname: apelyido
-  array:
+  nested:
     work:
       trabaho:
         position: posisyon
         industry: industriya
-        array:
+        nested:
           skills:
             kakayahan:
               language: lengwahe

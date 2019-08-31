@@ -25,7 +25,7 @@ def transform(source, mapping):
     data = {}
 
     for key in mapping:
-        if key == 'array':
+        if key == 'nested':
             array_key = next(iter(mapping[key]))
             array = mapping[key][array_key]
             data[array_key] = transform(source[next(iter(array))], array)
