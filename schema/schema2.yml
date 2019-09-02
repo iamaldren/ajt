@@ -1,0 +1,12 @@
+fields:
+  nombre: pangalan
+  apellido: apelyido
+  nested:
+    trabajo:
+      trabaho:
+        posicion: posisyon
+        industria: industriya
+        nested:
+          habilidades:
+            kakayahan:
+              idioma: lengwahe
