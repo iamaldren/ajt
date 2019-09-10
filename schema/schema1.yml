@@ -1,12 +1,8 @@
-fields:
-  name: pangalan
-  surname: apelyido
-  nested:
-    work:
-      trabaho:
-        position: posisyon
-        industry: industriya
-        nested:
-          skills:
-            kakayahan:
-              language: lengwahe
+shift:
+  pangalan: name
+  apelyido: surname
+  trabaho:
+    posisyon: work:position
+    industriya: work:industry
+    kakayahan:
+      lengwahe: skills:language
