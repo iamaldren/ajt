@@ -22,6 +22,7 @@ A schema YAML file is being used to define the mapping transformation.
 
 **Format**
 
+``` YAML
 fields:
  newfield1: oldfield1
  newfield2: oldfield2
@@ -30,6 +31,7 @@ fields:
   newfield4:
    oldfield4:
     newfield5: oldfield5 <-- (techinically this part is an object under field #4)
+```
  
 ## Limitations
 
